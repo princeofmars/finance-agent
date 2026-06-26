@@ -1,0 +1,16 @@
+{
+  "name": "finance-agent",
+  "version": "0.1.0",
+  "builds": [
+    {
+      "src": "api/*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/$1.py"
+    }
+  ]
+}
