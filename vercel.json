@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "builds": [
     {
-      "src": "api/*.py",
-      "use": "@vercel/python"
+      "src": "api/index.py",
+      "use": "@vercel/python",
+      "config": {
+        "requirements": "requirements.txt"
+      }
     }
   ],
   "routes": [
